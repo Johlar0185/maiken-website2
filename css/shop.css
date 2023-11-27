@@ -1,0 +1,39 @@
+main {
+  padding-top: 50px;
+  background-color: var(--beige);
+}
+
+.shop_c1 {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink);
+}
+
+.shop_c1 h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: Andada Pro;
+  color: var(--orange);
+}
+
+.shop_c1 p {
+  text-align: center;
+}
+
+.heading_container {
+  color: var(--green);
+  display: flex;
+  justify-content: center;
+}
+
+.heading_wrapper {
+  width: 80%;
+}
+
+.heading_wrapper h2 {
+  padding-bottom: -50px;
+  padding-top: 50px;
+}

@@ -1,0 +1,679 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Asap&display=swap");
+
+@font-face {
+  font-family: "Andada Pro";
+  src: url("path/to/andada-pro.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("path/to/asap.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --orange: #f55102;
+  --green: #034620;
+  --curry: #eb8121;
+  --pink: #f5b49f;
+  --beige: #f4e0d0;
+}
+
+a {
+  font-family: Asap;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+p {
+  font-family: Asap;
+  font-size: 14px;
+}
+
+h2 {
+  font-family: Andada Pro;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: Asap;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Top bar styling */
+
+.top-bar {
+  background-color: var(--orange);
+  color: var(--pink);
+  font-family: Asap;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+}
+
+.social-icon {
+  height: 25px;
+  width: 25px;
+  color: var(--pink);
+}
+
+.top-bar .social-icon:nth-child(2) {
+  padding-right: 10px;
+}
+
+/* Navigation bar styling */
+
+/* Navbar */
+nav {
+  height: auto;
+  width: 100%;
+  background: var(--green);
+  display: flex !important;
+  justify-content: center;
+  padding: 0 2em;
+  margin-top: 30;
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+  align-items: center;
+  z-index: 1100;
+  position: fixed;
+  margin-left: 0;
+}
+
+.nav-link-5 {
+  padding-right: 20px;
+}
+
+.nav-bar {
+  text-align: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.nav-menu li {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul:nth-child(1) {
+  padding-left: -40px;
+}
+
+.nav-menu ul {
+  margin: 0;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+a.nav-link {
+  color: var(--beige);
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: Asap;
+}
+
+a.nav-link:hover {
+  color: var(--orange);
+  transition: 0.5s ease;
+}
+
+a.nav-link::before {
+  width: 500%;
+}
+
+a.nav-link::after {
+  width: 500%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  width: 1.5rem;
+  height: 3px;
+  display: block;
+  padding: 0;
+  margin: 6px;
+  transition: 0.5s;
+  background-color: var(--beige);
+}
+
+.nav-bar ul li {
+  font-size: 1.5rem;
+  color: var(--beige);
+  padding: 0 1rem;
+}
+
+/* hides the home button on the desktop version and shows the logo */
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-desktop {
+  display: inline;
+}
+
+/* media query for mobile  */
+
+@media screen and (max-width: 992px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(-315deg);
+  }
+  .active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  /* navigation styling */
+
+  .nav-link-5 {
+    padding-right: 0px;
+  }
+
+  .nav-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -110%;
+    transition: 0.5s;
+    margin: 0 auto;
+    background: var(--green);
+  }
+
+  .nav-menu .nav-item-jo {
+    padding: 1rem 0;
+  }
+
+  a.nav-link {
+    margin: 1rem 0;
+    color: var(--beige);
+    z-index: 1;
+  }
+
+  .active {
+    left: 0;
+    z-index: 100;
+  }
+
+  /* hides the logo on the mobile menu and shows the home button */
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  a.nav-link {
+    padding: 0.75rem 0;
+  }
+}
+
+/* Footer styling  */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--green);
+}
+
+.wrapper_footer {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.del2_footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.del2_footer li {
+  list-style: none;
+  padding: 10px;
+}
+
+.del2_footer li a {
+  color: var(--beige);
+}
+
+.del1_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.del1_footer p {
+  max-width: 30ch;
+  color: var(--beige);
+}
+
+.some_footer img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer_logo {
+  width: 120px;
+  height: 120px;
+}
+
+/* Button styling */
+
+.hero_button,
+.about_button,
+.contact_button {
+  background-color: var(--pink);
+  color: var(--green);
+  padding: 16px 16px;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hero_button:hover,
+.about_button:hover,
+.contact_button:hover {
+  border-radius: 0 20px 0 20px;
+}
+
+/* Home page - container1 - three boxes, aligned */
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--beige);
+}
+
+.wrapper1 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1250px) {
+  .wrapper1 {
+    justify-content: space-between;
+  }
+}
+
+.box1,
+.box2,
+.box3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 330px;
+}
+
+.box_heading {
+  font-family: Andada Pro;
+  font-size: 25px;
+  color: var(--green);
+}
+
+.box1 p,
+.box2 p,
+.box3 p {
+  font-family: Asap;
+  color: var(--green);
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+.box1 a,
+.box2 a,
+.box3 a {
+  text-decoration: none;
+  font-family: Asap;
+  font-size: 14px;
+  background-color: var(--pink);
+  color: var(--green);
+  padding: 16px 76px;
+  margin-top: -25px;
+}
+
+.box1 a:hover,
+.box2 a:hover,
+.box3 a:hover {
+  background-color: var(--green);
+  color: var(--pink);
+}
+
+/* Homepage - Container2 - two columns, text and image*/
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--beige);
+}
+
+.wrapper2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.about_box1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.about_box2 {
+  display: flex;
+  align-items: center;
+  color: var(--green);
+}
+
+.about_h2,
+.contact_h2 {
+  font-size: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--green);
+}
+
+.about_p,
+.about_h3,
+.contact_p,
+.contact_h3 {
+  color: var(--green);
+}
+
+/* Top hero section */
+.hero_section {
+  background-image: url("/images/background.png");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.hero_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.hero_h1 {
+  padding-top: 300px;
+  font-family: Andada Pro;
+  font-size: 70px;
+  color: var(--green);
+}
+
+.hero_button {
+  width: 200px;
+  align-self: center;
+}
+
+/* CONTACT SECTION */
+
+.container4 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--beige);
+}
+
+.wrapper4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+.contact_box1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.contact_box2 {
+  display: flex;
+  align-items: center;
+  color: var(--green);
+}
+
+#submit_template {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* The actual form */
+
+#form_container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form {
+  padding: 10px;
+}
+
+input#name,
+input#email {
+  width: 350px;
+  margin-bottom: 10px;
+  border: none;
+  height: 30px;
+}
+
+.textarea {
+  height: 100px;
+  width: 350px;
+  border: none;
+  vertical-align: top;
+  resize: none;
+}
+
+#submit {
+  margin-top: 20px;
+  background-color: var(--pink);
+  color: var(--green);
+  border: none;
+  width: 300px;
+  font-family: Asap;
+  font-size: 14px;
+  height: 47px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  border-radius: 0 20px 0 20px;
+}
+
+.large-label {
+  font-family: Asap;
+  font-size: 14px;
+  padding-right: 10px;
+  color: var(--green);
+}
+
+/* Link to the contact place on the page */
+
+#contact_id {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+/* Homepage - Rolling text marquee */
+
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 40px;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+}
+
+.marquee2 {
+  height: 2em;
+  font-size: 1.5rem;
+  font-family: Andada Pro;
+  animation: animate 100s linear infinite;
+  display: flex;
+  flex-direction: row;
+  color: var(--beige);
+  background-color: var(--green);
+  font-size: 20px;
+}
+
+.marquee_container {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee2 a {
+  margin: auto 0.75em;
+  color: var(--beige);
+  text-decoration: none;
+  font-family: Andada Pro;
+  font-size: 20px;
+}
+
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* Instagram grid section */
+
+.container7 {
+  background-color: var(--pink);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.container7 h2,
+.container7 p {
+  color: var(--curry);
+}
+
+.container7 p {
+  padding-bottom: 50px;
+}
+
+.wrapper7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 250px 250px;
+  gap: 10px;
+}
+
+.insta-grid img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .insta-grid {
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .insta-grid {
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px 250px 250px;
+  }
+}
+
+/* image section/testimonials */
+
+.image_section {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.image_section {
+  background-image: url("/images/background.png");
+  background-size: cover;
+  height: 500px;
+}
+
+.image_section p {
+  text-align: center;
+  font-family: Andada Pro;
+  font-size: 25px;
+  color: var(--pink);
+  padding-right: 60px;
+  padding-left: 60px;
+}

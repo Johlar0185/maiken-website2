@@ -1,0 +1,67 @@
+main {
+  padding-top: 50px;
+  background-color: var(--beige);
+}
+
+.vip_c1 {
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink);
+}
+
+.vip_c1 h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: Andada Pro;
+  color: var(--orange);
+}
+
+/* Heading styling */
+
+.heading_container {
+  color: var(--green);
+  display: flex;
+  justify-content: center;
+}
+
+.heading_wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.heading_wrapper h2 {
+  padding-bottom: -50px;
+  padding-top: 50px;
+  font-size: 70px;
+  text-align: center;
+}
+
+/* headings for boxes */
+
+.box1 h3,
+.box2 h3,
+.box3 h3 {
+  text-decoration: none;
+  font-family: Andada Pro;
+  font-size: 20px;
+  background-color: var(--pink);
+  color: var(--green);
+  padding: 16px 76px;
+  margin-top: -25px;
+}
+
+/* offsets the center box in desktop view */
+
+@media screen and (min-width: 1220px) {
+  .box1,
+  .box3 {
+    margin-top: 50px;
+  }
+}
+
+.about_p span {
+  font-size: 25px;
+}
