@@ -5,17 +5,26 @@ main {
 
 .vip_c1 {
   display: flex;
+  flex-direction: column;
   height: 600px;
   justify-content: center;
   align-items: center;
-  background-color: var(--pink);
+  background-color: var(--orange);
+  background-image: url("/images/slider3.png");
+  background-size: cover;
 }
 
 .vip_c1 h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   font-family: Andada Pro;
-  color: var(--orange);
+  color: var(--beige);
+}
+
+.vip_c1 p {
+  font-family: asap;
+  font-size: 20px;
+  color: var(--beige);
 }
 
 /* Heading styling */

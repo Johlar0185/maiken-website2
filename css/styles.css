@@ -1,17 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Asap&display=swap");
 
-@font-face {
-  font-family: "Andada Pro";
-  src: url("path/to/andada-pro.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Asap";
-  src: url("path/to/asap.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
+main {
+  background-color: var(--beige);
 }
 
 :root {
@@ -304,6 +294,29 @@ a.nav-link::after {
   height: 120px;
 }
 
+.nav-item-footer {
+  text-align: right;
+}
+
+@media only screen and (max-width: 700px) {
+  .wrapper_footer {
+    justify-content: center;
+  }
+  .del1_footer {
+    text-align: center;
+    align-items: center;
+  }
+  .del2_footer {
+    text-align: center;
+  }
+  .nav-item-footer {
+    text-align: center;
+  }
+  .nav-menu-footer {
+    padding-inline-start: 0px;
+  }
+}
+
 /* Button styling */
 
 .hero_button,
@@ -316,12 +329,14 @@ a.nav-link::after {
   width: 50%;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hero_button:hover,
 .about_button:hover,
 .contact_button:hover {
-  border-radius: 0 20px 0 20px;
+  /* border-radius: 0 20px 0 20px; */
+  transform: scale(1.1);
 }
 
 /* Home page - container1 - three boxes, aligned */
@@ -379,8 +394,8 @@ a.nav-link::after {
   text-decoration: none;
   font-family: Asap;
   font-size: 14px;
-  background-color: var(--pink);
-  color: var(--green);
+  background-color: var(--green);
+  color: var(--beige);
   padding: 16px 76px;
   margin-top: -25px;
 }
@@ -388,8 +403,7 @@ a.nav-link::after {
 .box1 a:hover,
 .box2 a:hover,
 .box3 a:hover {
-  background-color: var(--green);
-  color: var(--pink);
+  border-radius: 10px;
 }
 
 /* Homepage - Container2 - two columns, text and image*/
@@ -439,7 +453,7 @@ a.nav-link::after {
 
 /* Top hero section */
 .hero_section {
-  background-image: url("/images/background.png");
+  background-image: url("/images/background4-01.png");
   background-size: cover;
   width: 100%;
   height: 700px;
@@ -453,15 +467,32 @@ a.nav-link::after {
 }
 
 .hero_h1 {
-  padding-top: 300px;
+  padding-top: 280px;
   font-family: Andada Pro;
-  font-size: 70px;
-  color: var(--green);
+  font-size: 60px;
+  color: var(--beige);
+  text-align: center;
 }
 
 .hero_button {
   width: 200px;
   align-self: center;
+  font-weight: bold;
+  background-color: var(--green);
+  color: var(--beige);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero_button:hover {
+  transform: scale(1.1);
+}
+
+.hero_wrapper p {
+  text-align: center;
+  color: var(--beige);
+  font-family: Asap;
+  font-size: 20px;
+  margin-top: -20px;
 }
 
 /* CONTACT SECTION */
@@ -537,10 +568,11 @@ input#email {
   font-size: 14px;
   height: 47px;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 #submit:hover {
-  border-radius: 0 20px 0 20px;
+  transform: scale(1.1);
 }
 
 .large-label {
@@ -568,6 +600,7 @@ input#email {
   background-color: var(--green);
   display: flex;
   align-items: center;
+  margin-top: 100px;
 }
 
 .marquee2 {
@@ -661,19 +694,32 @@ input#email {
   display: flex;
   align-items: center;
   justify-items: center;
-}
-
-.image_section {
-  background-image: url("/images/background.png");
+  flex-direction: column;
+  background-image: url("/images/slider2.png");
   background-size: cover;
-  height: 500px;
+  padding: 10%;
 }
 
 .image_section p {
   text-align: center;
   font-family: Andada Pro;
   font-size: 25px;
-  color: var(--pink);
+  color: var(--beige);
   padding-right: 60px;
   padding-left: 60px;
+}
+
+.image_section a {
+  background-color: var(--green);
+  color: var(--beige);
+  padding: 16px 16px;
+  text-align: center;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image_section a:hover {
+  transform: scale(1.1);
 }
