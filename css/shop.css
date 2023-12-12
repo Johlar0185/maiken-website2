@@ -9,14 +9,14 @@
 }
 
 .shop_box img {
-  background-color: white;
   max-height: 330px;
+  background-color: white;
 }
 
 .box_heading {
   font-family: Andada Pro;
   font-size: 25px;
-  color: var(--green);
+  color: var(--pink);
 }
 
 .shop_box p {
@@ -27,8 +27,7 @@
 }
 
 .product_button:hover {
-  background-color: var(--green);
-  color: var(--pink);
+  border-radius: 10px;
 }
 
 .product_button {
@@ -37,7 +36,7 @@
   font-family: Asap;
   font-size: 14px;
   color: var(--green);
-  padding: 16px 76px;
+  padding: 16px 46px;
   margin-top: -25px;
   text-transform: uppercase;
 }
@@ -92,7 +91,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--orange);
-  background-image: url("/images/background-mirrored.png");
+  background-image: url("../images/slider3.png");
   background-size: cover;
 }
 
@@ -116,4 +115,8 @@ main {
 .heading_wrapper h2 {
   padding-bottom: -50px;
   padding-top: 50px;
+}
+
+.container1 {
+  background-color: var(--green);
 }

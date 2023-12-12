@@ -2,8 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="illustrations/icon.png" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/vip.css" />
+    <link rel="stylesheet" href="css/slider.css">
     <title>VIP Klub</title>
   </head>
   <body>
@@ -11,10 +13,10 @@
       <!-- begin nav -->
       <div class="top-bar">
         <a class="social-icon" href="#"
-          ><img src="/icons/facebook-circle.svg" alt="Facebook"
+          ><img src="icons/facebook-circle.svg" alt="Facebook"
         /></a>
         <a class="social-icon" href="#"
-          ><img src="/icons/instagram-alt.svg" alt="Instagram"
+          ><img src="icons/instagram-alt.svg" alt="Instagram"
         /></a>
       </div>
       <div>
@@ -28,12 +30,13 @@
                 <a href="index.html#about_id" class="nav-link">HVEM ER JEG?</a>
               </li>
               <li class="nav-item">
-                <a href="vip.html" class="nav-link">KUNSTNERKLUB</a>
-              </li>
+                <a href="services.html" class="nav-link nav-link-5"
+                  >ARBEJD MED MIG</a
+                >
               <li>
                 <a href="index.html"
                   ><img
-                    src="/illustrations/Maiken_logo.svg"
+                    src="illustrations/Maiken_logo.svg"
                     alt="logo"
                     class="nav-link nav-desktop"
                     width="90px"
@@ -42,10 +45,10 @@
               <li class="nav-item">
                 <a href="shop.html" class="nav-link">ORIGINALE VÆRKER</a>
               </li>
-              <li class="nav-item">
-                <a href="services.html" class="nav-link nav-link-5"
-                  >ARBEJD MED MIG</a
-                >
+
+                <li class="nav-item">
+                  <a href="vip.html" class="nav-link">KUNSTNERKLUB</a>
+                </li>
               </li>
             </ul>
           </div>
@@ -66,37 +69,56 @@
         </h1>
         <p>Er det tid at tage din kreative business til nye højder?</p>
       </div>
-      <!-- afsnit 4 -->
+      <!-- beskrivelse af klubben -->
       <div id="about_id" class="container2">
         <!-- wrapper -->
         <div class="wrapper2">
           <!-- kolonne 1 -->
           <div class="about_box1">
-            <h3 class="about_h3">SKAL VI SKABE MAGI?</h3>
+            <h3 class="about_h3">Online Kunstner Fællesskabets</h3>
             <h2 class="about_h2">VIP Klub</h2>
             <p class="about_p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              minus molestiae at quibusdam error labore cum cupiditate
-              voluptatibus. Repellendus at, deleniti voluptatibus quis nam
-              tempore fugit magnam! Doloribus, rem corporis. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Iste minus molestiae at
-              quibusdam error labore cum cupiditate voluptatibus. Repellendus
-              at, deleniti voluptatibus quis nam tempore fugit magnam!
-              Doloribus, rem corporis. <br /><br />
+              Ønsker du at dygtiggøre dig som kunstner og deltage i et
+              inspirerende fællesskab af ligesindede? Så er V.I.P. Klubben –
+              Online Kunstner Fællesskabet det perfekte sted for dig!
+              <br /><br />
+              Bland dig med ligesindede kunstnere fra hele Danmark. Udforsk, del
+              og inspirer hinanden i vores spændende online fællesskab. Sammen
+              skaber vi et kraftfuldt netværk, der trives på kreativitet og
+              støtte. <br /><br />
+              Hvad kan du forvente at få ud af V.I.P. Klubben?
+            </p>
+            <ul>
+              <li>
+                <span>Forbedrede kunstneriske færdigheder:</span> Lær nye
+                teknikker og metoder til at dele din kunst, eksempelvis ved brug af værktøjer som Canva, AI og Adobe pakken. 
+              </li>
+              <li>
+                <span>Inspirerende fællesskab:</span> Klubben hjælper dig med at træde ind i en verden af kunst og kreativitet. Deltag i meningsfulde
+                diskussioner og samarbejder med andre kunstnere og kreative
+                personer. 
+              </li>
+              <li>
+                <span>Personlig feedback:</span> Udforsk dit kunstneriske
+                potentiale og få værdifuld feedback og støtte fra vores
+                fællesskab. Sammen hjælper vi hinanden med at få mest muligt ud af vores kreative forretning.
+              </li>
+            </ul>
+            <p class="about_p">
               <span>Alt dette til kun 79kr/mdr.</span> <br />
               Ingen binding - opsig når du vil
             </p>
-            <a class="about_button" href="#contact_id">KØB NU</a>
+            <a class="vip_button" href="">KØB NU</a>
           </div>
           <!-- kolonne 2 -->
           <div class="about_box2">
-            <img src="/images/maiken_img.png" alt="Maiken" />
+            <img class="art_ill_1" src="images/artistclub.png" alt="Maiken" />
           </div>
         </div>
       </div>
       <div class="heading_container">
         <div class="heading_wrapper">
-          <h2>Hvad får du <br />ud af det?</h2>
+          <h2>Hvad får du som medlem?</h2>
         </div>
       </div>
       <div class="container1">
@@ -104,84 +126,109 @@
         <div class="wrapper1">
           <!-- box 1 -->
           <div class="box1">
-            <img src="/images/one_placeholder.png" alt="placeholder" />
-            <h3>Inspiration</h3>
+            <img src="images/15.png" alt="placeholder" />
+            <h3>Eksklusive Videoguides</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              delectus, laudantium quo, in quidem et voluptatem reprehenderit
-              porro ipsam facere numquam.
+              Få adgang til vores private Facebookgruppe, hvor du kan interagere
+              med andre kreative business personer. Du vil få adgang til nøje
+              udvalgte videoer hver måned, der dækker en bred vifte af emner -
+              og du vil altid have adgang til tidligere måneders indhold.
             </p>
           </div>
           <!-- box 2 -->
           <div class="box2">
-            <img src="/images/2_placeholder.png" alt="placeholder" />
-            <h3>Fællesskab</h3>
+            <img src="images/14.png" alt="placeholder" />
+            <h3>Opgaver til Hvert Tema</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              delectus, laudantium quo, in quidem et voluptatem reprehenderit
-              porro ipsam facere numquam.
+              Lær nye teknikker, få feedback på dine kunstværker, og udfordr dig
+              selv med vores spændende temaopgaver. Vores ugentlige opgaver sikrer, at du konstant udvikler dine
+              færdigheder og eksperimenterer med nye teknikker.
             </p>
           </div>
           <!-- box 3 -->
           <div class="box3">
-            <img src="/images/3_placeholder.png" alt="placeholder" />
-            <h3>Lav Pris</h3>
+            <img src="images/16.png" alt="placeholder" />
+            <h3>Live Interaktion og Q&A</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              delectus, laudantium quo, in quidem et voluptatem reprehenderit
-              porro ipsam facere numquam.
+              Tag del i vores live interaktive sessioner og Q&A med din underviser og med ligesindede der beskæftiger sig med kunst og kreativitet. Få personlige råd, svar på dine
+              spørgsmål og bliv en del af en engagerende samtale.
             </p>
           </div>
         </div>
       </div>
-      <!-- afsnit 4 -->
-      <div id="about_id" class="container2">
+      <!-- beskrivelse af Maiken -->
+      <div class="container2_vip">
         <!-- wrapper -->
         <div class="wrapper2">
           <!-- kolonne 1 -->
-          <div class="about_box1">
-            <h3 class="about_h3">HVEM STÅR BAG VIP KLUBBEN?</h3>
-            <h2 class="about_h2">Maiken's Ekspertise</h2>
-            <p class="about_p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              minus molestiae at quibusdam error labore cum cupiditate
-              voluptatibus. Repellendus at, deleniti voluptatibus quis nam
-              tempore fugit magnam! Doloribus, rem corporis. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Iste minus molestiae at
-              quibusdam error labore cum cupiditate voluptatibus. Repellendus
-              at, deleniti voluptatibus quis nam tempore fugit magnam!
-              Doloribus, rem corporis.
+          <div class="vip_box1">
+            <h3 class="vip_h3">HVEM STÅR BAG VIP KLUBBEN?</h3>
+            <h2 class="vip_h2">Maiken Damsgaard</h2>
+            <p class="vip_p">
+              Jeg er oprindeligt uddannet lærer, nu IT-didaktiker med fokus på
+              didaktisk visualisering – og illustrator. Min ekspertise ligger i forståelsen af,
+              hvordan vi lærer bedst. Jeg omsætter uddannelseskoncepter til
+              visuelt fængslende illustrationer og undervisningsmateriale, der forstærker læringsoplevelsen.
             </p>
             <a class="about_button" href="#contact_id">KONTAKT</a>
           </div>
           <!-- kolonne 2 -->
-          <div class="about_box2">
-            <img src="/images/maiken_img.png" alt="Maiken" />
+          <div class="vip_box2">
+            <img src="images/maiken_img.png" alt="Maiken" />
           </div>
         </div>
       </div>
-      <!-- afsnit 5 -->
-      <div class="image_section">
-        <p>
-          “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.” <br />Louise, Mor til Karen
-        </p>
+      <!-- testimonials -->
+      <div class="hero_section2">
+        <div class="slider_tabs">
+          <input type="radio" name="slider" id="slider1" />
+          <input type="radio" name="slider" id="slider2" />
+          <input type="radio" name="slider" id="slider3" />
+          <div class="labels">
+            <label for="slider1"></label>
+            <label for="slider2"></label>
+            <label for="slider3"></label>
+          </div>
+          <div class="hero_content2">
+            <div class="hero_box2 slider1_bg">
+              <div class="content">
+                <p class="desc2">
+                  “VIP klubben har givet mig adgang til masser af spændende materialer
+                  på dansk, jeg aldrig ellers havde fundet frem til. Maiken er en
+                  utroligt inspirerende lærer..” <br />Mathilde, Fiktiv Virksomhed
+                </p>
+              </div>
+            </div>
+            <div class="hero_box2 slider2_bg">
+              <div class="content">
+                <p class="desc2">
+                  "Jeg havde længe ledt efter et kunstnerfællesskab, og er så glad for at jeg fandt dette.  Her får du masser af
+                  værdi for pengene." <br> Signe, Fiktiv freelancer
+                </p>
+              </div>
+            </div>
+            <div class="hero_box2 slider3_bg">
+              <div class="content">
+                <p class="desc2">
+                  "Maikens ekspertise er helt unik og hendes tilgang har hjulpet mig til at se min forretning fra en ny vinkel."<br> Malene, marketing 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- afsnit 6 -->
+      <!-- contact form -->
       <div class="container4">
         <!-- wrapper -->
         <div class="wrapper4">
           <!-- container 1 -->
           <div id="contact_id">
-            <h3 class="contact_h3">SKAL VI SKABE MAGI?</h3>
-            <h2 class="contact_h2">Vil du Høre Mere?</h2>
+            <h3 class="contact_h3">VIL DU VIDE MERE?</h3>
+            <h2 class="contact_h2">Skriv til Mig</h2>
             <p class="contact_p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              minus molestiae at quibusdam error labore cum cupiditate
-              voluptatibus. Repellendus at, deleniti voluptatibus quis nam
-              tempore fugit magnam! Doloribus, rem corporis.
+              Har du spørgsmål til klubben, dens medlemmer eller nogen af mine
+              ydelser? Intet problem - du skriver bare, og så gør jeg mit bedste
+              for at svare dig så hurtigt som muligt.
             </p>
           </div>
           <!-- container 2 -->
@@ -226,7 +273,7 @@
           <div class="del1_footer">
             <img
               class="footer_logo"
-              src="/illustrations/Maiken_logo.svg"
+              src="illustrations/Maiken_logo.svg"
               alt="logo"
             />
             <p>
@@ -235,10 +282,10 @@
             </p>
             <div class="SoMe_footer">
               <a class="social-icon" href="#"
-                ><img src="/icons/facebook-circle.svg" alt="Facebook"
+                ><img src="icons/facebook-circle.svg" alt="Facebook"
               /></a>
               <a class="social-icon" href="#"
-                ><img src="/icons/instagram-alt.svg" alt="Instagram"
+                ><img src="icons/instagram-alt.svg" alt="Instagram"
               /></a>
             </div>
           </div>
@@ -269,5 +316,6 @@
       </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

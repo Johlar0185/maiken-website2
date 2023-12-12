@@ -57,6 +57,23 @@
   flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 800px) {
+  .reverseClass {
+    flex-direction: row;
+  }
+  .wrapper2 {
+    margin-left: -25px;
+  }
+
+  .ser_image_box img {
+    width: 350px;
+    margin-top: 10px;
+  }
+  .about_h2 {
+    font-size: 50px;
+  }
+}
+
 /* COLLAPSIBLE styling - containers */
 
 .container_collapsible {
@@ -101,7 +118,6 @@
   color: var(--beige);
   cursor: pointer;
   padding: 18px;
-  /* width: 100%; */
   border: none;
   text-align: left;
   outline: none;
@@ -145,11 +161,18 @@
   color: var(--beige);
   margin: 0;
   text-align: center;
-  padding: 50;
+  padding-top: 50;
+  padding-bottom: 50;
 }
 
 .heading_services_class h2 {
   font-size: 70px;
+}
+
+@media screen and (max-width: 700px) {
+  .heading_services_class h2 {
+    font-size: 50px;
+  }
 }
 
 /* Header slider  */
@@ -160,7 +183,6 @@ body {
 }
 body {
   font-family: Asap;
-  line-height: 1.5;
 }
 
 .hero_section {
@@ -223,18 +245,18 @@ body {
 
 .hero_content .hero_box:nth-child(1) {
   background-color: var(--orange);
-  background-image: url("/images/slider1.png");
+  background-image: url("../images/slider1.png");
   background-size: cover;
 }
 .hero_content .hero_box:nth-child(2) {
   background-color: var(--green);
-  background-image: url("/images/slider3.png");
+  background-image: url("../images/slider3.png");
   background-size: cover;
 }
 
 .hero_content .hero_box:nth-child(3) {
   background-color: var(--orange);
-  background-image: url("/images/slider2.png");
+  background-image: url("../images/slider2.png");
   background-size: cover;
 }
 
@@ -248,7 +270,7 @@ body {
   left: -200vw;
 }
 
-/* trying animation */
+/*  animation for auto rotate slides */
 
 @keyframes slideAuto {
   0%,
@@ -331,4 +353,79 @@ body {
 
 .ser_image_box img {
   max-width: 430px;
+}
+
+.ser_image_box {
+  cursor: pointer;
+}
+
+.text-link {
+  font-family: asap;
+  color: var(--green);
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Testimonial Slider */
+
+.hero_section2 {
+  background-color: var(--beige);
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero_content2 .hero_box2 {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.desc2 {
+  padding: 10px 20px;
+  width: 80%;
+  font-size: 25px;
+  text-align: center;
+  font-family: Andada Pro;
+  max-width: 85ch;
+  color: var(--beige);
+}
+
+.hero_content2 .hero_box2:nth-child(1) {
+  background-color: var(--orange);
+  background-image: url("../images/slider1.png");
+  background-size: cover;
+}
+.hero_content2 .hero_box2:nth-child(2) {
+  background-color: var(--green);
+  background-image: url("../images/slider3.png");
+  background-size: cover;
+}
+
+.hero_content2 .hero_box2:nth-child(3) {
+  background-color: var(--orange);
+  background-image: url("../images/slider2.png");
+  background-size: cover;
+}
+
+.slider_tabs input:nth-child(1):checked ~ .hero_content2 {
+  left: 0vw;
+}
+.slider_tabs input:nth-child(2):checked ~ .hero_content2 {
+  left: -100vw;
+}
+.slider_tabs input:nth-child(3):checked ~ .hero_content2 {
+  left: -200vw;
+}
+
+.hero_content2 {
+  display: flex;
+  width: 300vw;
+  position: relative;
+  transition: all 0.5s linear;
 }

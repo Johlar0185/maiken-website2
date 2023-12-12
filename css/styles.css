@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Asap&display=swap");
 
 main {
+  line-height: 1.5;
   background-color: var(--beige);
 }
 
 :root {
-  --orange: #f55102;
-  --green: #034620;
-  --curry: #eb8121;
-  --pink: #f5b49f;
+  --orange: #d84516;
+  --green: #073d1d;
+  --curry: #e47617;
+  /* --pink: #ffbcaa; */
+  --pink: #f6aa95;
   --beige: #f4e0d0;
 }
 
@@ -83,10 +85,6 @@ nav {
   z-index: 1100;
   position: fixed;
   margin-left: 0;
-}
-
-.nav-link-5 {
-  padding-right: 20px;
 }
 
 .nav-bar {
@@ -209,7 +207,7 @@ a.nav-link::after {
     background: var(--green);
   }
 
-  .nav-menu .nav-item-jo {
+  .nav-menu .nav-item {
     padding: 1rem 0;
   }
 
@@ -217,6 +215,8 @@ a.nav-link::after {
     margin: 1rem 0;
     color: var(--beige);
     z-index: 1;
+    font-size: 20px;
+    padding-top: 15px;
   }
 
   .active {
@@ -335,7 +335,6 @@ a.nav-link::after {
 .hero_button:hover,
 .about_button:hover,
 .contact_button:hover {
-  /* border-radius: 0 20px 0 20px; */
   transform: scale(1.1);
 }
 
@@ -453,7 +452,8 @@ a.nav-link::after {
 
 /* Top hero section */
 .hero_section {
-  background-image: url("/images/background4-01.png");
+  background-image: url("../images/background4-01.png");
+  background-color: var(--orange);
   background-size: cover;
   width: 100%;
   height: 700px;
@@ -647,12 +647,16 @@ input#email {
 }
 
 .container7 h2,
-.container7 p {
-  color: var(--curry);
+.container7 a {
+  color: var(--orange);
 }
 
-.container7 p {
-  padding-bottom: 50px;
+.container7 a {
+  padding: 50px;
+  cursor: pointer;
+}
+.container7 a:hover {
+  text-decoration: underline;
 }
 
 .wrapper7 {
@@ -666,6 +670,7 @@ input#email {
   grid-template-columns: 250px 250px 250px 250px;
   grid-template-rows: 250px 250px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .insta-grid img {
@@ -686,8 +691,15 @@ input#email {
     grid-template-columns: 250px 250px;
     grid-template-rows: 250px 250px 250px 250px;
   }
-}
 
+  @media screen and (max-width: 700px) {
+    .insta-grid {
+      grid-template-columns: 200px 200px;
+      gap: 5px;
+      grid-template-rows: 200px 200px 200px 220px;
+    }
+  }
+}
 /* image section/testimonials */
 
 .image_section {
@@ -695,7 +707,8 @@ input#email {
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  background-image: url("/images/slider2.png");
+  background-image: url("../images/slider2.png");
+  background-color: var(--orange);
   background-size: cover;
   padding: 10%;
 }
@@ -707,6 +720,13 @@ input#email {
   color: var(--beige);
   padding-right: 60px;
   padding-left: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .image_section p {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .image_section a {
@@ -722,4 +742,10 @@ input#email {
 
 .image_section a:hover {
   transform: scale(1.1);
+}
+
+/* Hides the sidescroll */
+
+body {
+  overflow-x: hidden;
 }

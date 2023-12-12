@@ -4,6 +4,12 @@
   max-width: 400px;
 }
 
+@media screen and (max-width: 700px) {
+  #productImg {
+    max-width: 350px;
+  }
+}
+
 .productWrapper3 {
   max-width: 80%;
 }
@@ -51,6 +57,12 @@
   font-family: Andada Pro;
 }
 
+@media screen and (max-width: 700px) {
+  .productTitle {
+    font-size: 35px;
+  }
+}
+
 .product_h2 {
   color: var(--green);
   font-family: Asap;
@@ -89,5 +101,19 @@ a {
   width: 80%;
   margin-top: 150px;
   margin-bottom: 100px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+}
+
+/* Hides the sidescroll */
+
+body {
+  overflow-x: hidden;
+}
+
+/* makes row-reverse in narrow view */
+
+@media screen and (max-width: 1000px) {
+  .product_wrapper2 {
+    flex-direction: column-reverse;
+  }
 }
