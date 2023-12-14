@@ -168,3 +168,7 @@ ul span {
 body {
   overflow-x: hidden;
 }
+
+.nav-menu li:nth-child(6) a.nav-link {
+  color: var(--orange);
+}

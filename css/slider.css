@@ -8,14 +8,14 @@ body {
   font-family: Asap;
 }
 
-.hero_section {
+.hero_section2 {
   background-color: var(--beige);
   height: 100vh;
   width: 100%;
   position: relative;
 }
 
-.slider_tabs input {
+.slider_tabs2 input {
   visibility: hidden;
   display: none;
 }
@@ -38,9 +38,9 @@ body {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.slider_tabs input:nth-child(1):checked ~ .labels label:nth-child(1),
-.slider_tabs input:nth-child(2):checked ~ .labels label:nth-child(2),
-.slider_tabs input:nth-child(3):checked ~ .labels label:nth-child(3) {
+.slider_tabs2 input:nth-child(1):checked ~ .labels label:nth-child(1),
+.slider_tabs2 input:nth-child(2):checked ~ .labels label:nth-child(2),
+.slider_tabs2 input:nth-child(3):checked ~ .labels label:nth-child(3) {
   width: 60px;
   background: var(--beige);
 }
@@ -146,13 +146,13 @@ body {
   background-size: cover;
 }
 
-.slider_tabs input:nth-child(1):checked ~ .hero_content2 {
+.slider_tabs2 input:nth-child(1):checked ~ .hero_content2 {
   left: 0vw;
 }
-.slider_tabs input:nth-child(2):checked ~ .hero_content2 {
+.slider_tabs2 input:nth-child(2):checked ~ .hero_content2 {
   left: -100vw;
 }
-.slider_tabs input:nth-child(3):checked ~ .hero_content2 {
+.slider_tabs2 input:nth-child(3):checked ~ .hero_content2 {
   left: -200vw;
 }
 

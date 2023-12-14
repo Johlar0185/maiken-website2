@@ -180,6 +180,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 body {
   font-family: Asap;
@@ -314,7 +315,6 @@ body {
 /* Hides the sidescroll */
 
 body {
-  overflow-x: hidden;
 }
 
 .wrapper1 {
@@ -428,4 +428,8 @@ body {
   width: 300vw;
   position: relative;
   transition: all 0.5s linear;
+}
+
+.nav-menu li:nth-child(3) a.nav-link {
+  color: var(--orange);
 }
