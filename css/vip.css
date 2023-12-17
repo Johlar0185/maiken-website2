@@ -1,6 +1,7 @@
 main {
   padding-top: 50px;
   background-color: var(--beige);
+  overflow-x: hidden;
 }
 
 .vip_c1 {
